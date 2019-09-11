@@ -1,0 +1,5 @@
+!!! NOTE !!!
+
+It is recommended to use TrueMag Sample Data plugin to import sample data.
+
+RAW data is exported as a backed up to experience developers only...
