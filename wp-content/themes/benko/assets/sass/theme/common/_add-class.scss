@@ -1,0 +1,221 @@
+// add class
+
+//no padding
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.inline{
+    input{
+        height:auto;
+    }
+}
+.center{
+    text-align: center;
+}
+.clear-left{
+    @include rtl-clear-left();
+}
+.js-vc_parallax-o-image {
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-position: 0 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-fixed{
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-position: 0 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ads-item > *{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.ads-item.col-xs-6 > * {
+    background: #fff none repeat scroll 0 0;
+    padding: 15px;
+}
+.layout-list{
+    .ads-item > *{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.ads_vertical img {
+    width: 160px;
+    max-width: 160px !important;
+}
+.ads_content_single{
+    float: right;
+    @include rtl-padding-left(30px);
+    padding-bottom:30px;
+}
+.advertising_after_content{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.advertising_single_top{
+    margin-top:80px;
+}
+.advertising_content_single{
+    margin-bottom: 70px;
+    margin-top: 70px;
+    text-align: center;
+}
+.advertising_single_comments{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    text-align: center;
+}
+.advertising_single_inner{
+    margin-bottom: 15px;
+    margin-top: 40px;
+    text-align: center;
+}
+.has-padding-top{
+    padding-top: 60px;
+}
+/** initial setup **/
+.nano {
+    position : relative;
+    height   : 100%;
+    overflow : hidden !important;
+}
+.nano > .nano-content {
+    position      : absolute;
+    overflow      : scroll;
+    overflow-x    : hidden;
+    top           : 0;
+    right         : 0;
+    bottom        : 0;
+    left          : 0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.nano > .nano-content:focus {
+    outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+    display: none;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+    display: block;
+}
+.nano > .nano-pane {
+    background : #F5F5F5;
+    position   : absolute;
+    width      : 7px;
+    @include rtl-right(0);
+    top        : 0;
+    bottom     : 0;
+    visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+    opacity    : .01;
+    -webkit-transition    : .2s;
+    -moz-transition       : .2s;
+    -o-transition         : .2s;
+    transition            : .2s;
+    border-radius: 2px;
+}
+.nano > .nano-pane > .nano-slider {
+    background:#C1C1C1;
+    position              : relative;
+    margin                : 0 1px;
+    border-radius: 5px;
+}
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+    visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+    opacity    : 0.99;
+}
+.col-equal{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    .vc_column_container{
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+        position: relative;
+    }
+    .vc_column-inner{
+        height: 100%;
+        display: block;
+    }
+    .wpb_wrapper{
+        height: 100%;
+        background: #F6F6F6;
+        display: block;
+    }
+}
+
+.page-content{
+    .vc_col-has-fill > .vc_column-inner,
+    .vc_row-has-fill + .vc_row-full-width + .vc_row > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill + .vc_row > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill + .vc_vc_row > .vc_row > .vc_vc_column > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill + .vc_vc_row_inner > .vc_row > .vc_vc_column_inner > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill > .vc_row > .vc_vc_column > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill > .vc_vc_column_inner > .vc_column_container > .vc_column-inner,
+    .vc_section.vc_section-has-fill,
+    .vc_section.vc_section-has-fill + .vc_row-full-width + .vc_section,
+    .vc_section.vc_section-has-fill + .vc_section{
+        padding-top: 0;
+    }
+}
+
+.layout-grid .col-md-6:nth-child(2n+1){
+    @include rtl-clear-left();
+}
+.layout-grid  .col-md-4:nth-child(3n+1){
+    @include rtl-clear-left();
+}
+.clear{
+    @include rtl-clear-left();
+}
+.widget .fb_iframe_widget_fluid{
+    display: block;
+}
+.icon-energy{
+    color: #6bc2da;
+}
+.icon-rocket{
+    color: #ff5a00;
+}
+.icon-fire{
+    color: #c23335;
+}
+

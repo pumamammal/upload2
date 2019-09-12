@@ -1,0 +1,133 @@
+//style short code
+
+//style widget Video
+.nano-video {
+    .image-embed{
+        position: relative;
+    }
+    .btn-play{
+        color: $color-title;
+        font-size: 36px;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        display: inline-block;
+        margin-top: -50px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        text-align: center;
+        cursor: pointer;
+        @include rtl-padding-left(5px);
+        &:hover{
+            border: 2px solid #fff;
+            color: #FFF;
+        }
+    }
+    .btn-play i {
+        color: white;
+        font-size: 32px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        margin-left: -10px;
+        margin-top: -44px;
+    }
+    .embed-responsive.hidden{
+        position: absolute;
+        z-index: -1;
+    }
+    .video-embed{
+        position: relative;
+    }
+    .video-content{
+        color: #fff;
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    .title-video{
+        color: #fff;
+    }
+    .bgr-item {
+        background: black none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+}
+
+//style widget TEAMS
+.nano-infoTeams {
+    text-align: left;
+    .block-title{
+        font-size: 32px;
+        color:$color-title;
+        line-height: 50px;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    .block-des{
+        padding-bottom: 30px;
+    }
+    .block-content{
+        margin: 0 -15px;
+    }
+    .box-team-list{
+        @include rtl-float-left();
+        padding:0 15px;
+        width: 25%;
+    }
+    .title-box{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .des-box{
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .list-social{
+        list-style: none;
+        padding: 0;
+        li{
+            display: inline-block;
+            &:hover{
+                i{
+                    color:$color-title;
+                }
+            }
+        }
+        i{
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: $color-meta;
+        }
+    }
+}
+
+.about-info{
+    padding-left: 50px;
+    padding-top: 30px;
+    h4{
+        font-size: 24px;
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+h4.vc_custom_heading{
+    margin-top: 20px;
+}

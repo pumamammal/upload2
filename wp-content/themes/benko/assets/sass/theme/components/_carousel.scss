@@ -1,0 +1,62 @@
+//style carousel
+.slick-prev,
+.slick-next{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    color:#222;
+    border-radius:0;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 99;
+    @include transition(0.4s);
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    background:rgba(255, 255, 255, 0.5);
+    &:before{
+        font-size: 24px;
+        line-height: 50px;
+        color:#222;
+
+    }
+    &:hover,&:active{
+        background:#FFF;
+        color:#222;
+        @include transition(0.4s);
+        opacity: 1;
+        &:before{
+            color:#222;
+        }
+    }
+}
+.article-carousel:hover{
+    .slick-prev,
+    .slick-next{
+        opacity: 1;
+    }
+}
+.product-carousel:hover{
+    .slick-prev,
+    .slick-next{
+        opacity: 1;
+    }
+}
+.box-slider {
+    .slick-prev{
+        @include rtl-left(15px);
+    }
+    .slick-slider{
+        &:hover {
+            .slick-prev,
+            .slick-next{
+                opacity: 1;
+            }
+        }
+    }
+}
+.slick-dots{
+    width: auto;
+    display: inline-block;
+}
